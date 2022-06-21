@@ -1,0 +1,25 @@
+{
+  "name": "teste-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "k6": "^0.0.0"
+  },
+  "devDependencies": {
+    "k6-html-reporter": "^1.0.5"
+  },
+  "scripts": {
+    "test:end2end": "k6 run k6_runs.js",
+    "test:user": "k6 run Scenario/user/user_index.js",
+    "start": "npm install package.json --save-dev && mkdir tmp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://radixeng@dev.azure.com/radixeng/Projeto%20Interno%20Radix%20Nexus/_git/Teste-API"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
